@@ -7,10 +7,16 @@
 # 3 6 9 12 15 18
 # 6 12
 
-from random import randint
-n = set(randint(1, 20) for i in range(int(input('Введите кол-во элементов первого множества: '))))
-print(n)
-m = set(randint(1, 20) for i in range(int(input('Введите кол-во элементов второго множества: '))))
-print(m)
-s = sorted(n.intersection(m))
-print(*s)
+# from random import randint
+# n = set(randint(1, 20) for i in range(int(input('Введите кол-во элементов первого множества: '))))
+# print(n)
+# m = set(randint(1, 20) for i in range(int(input('Введите кол-во элементов второго множества: '))))
+# print(m)
+# s = sorted(n.intersection(m))
+# print(s)
+
+n = {1,2,10,20,22,55}
+m = {1,2,90,22,10,88}
+
+s = sorted(n.intersection(m)) 
+print (s)
